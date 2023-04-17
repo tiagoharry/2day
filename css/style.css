@@ -46,7 +46,7 @@ nav{
   gap: 42px;
 }
 
-nav a {
+nav a, .nav_language {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -74,6 +74,10 @@ nav ul li a:hover {
 .btn_sample_nav:hover {
   background-color: #00d6de;
   transition: 1s;
+}
+
+.nav_language {
+left: 0;
 }
 
 h1 {
