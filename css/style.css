@@ -19,7 +19,7 @@ html {
   font-display: swap;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   background-color: #2d364f;
@@ -31,30 +31,26 @@ nav {
   padding: 0 120px;
 }
 
-nav ul {
+.header_logo img {
+  width: 97px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: none;
+}
+
+nav{
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
+  gap: 42px;
 }
 
-nav ul li {
-  margin: 5px;
-}
-
-nav ul a div {
-  width: 100%;
-}
-
-nav ul li a,
-.nav_language {
+nav a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
@@ -62,13 +58,26 @@ nav ul li a:hover {
   color: #00adb5;
 }
 
-nav .menu-btn img {
+.btn_sample_nav,  .OqueNosFazemos_btn{
+  background-color: #00adb5;
+  color: white;
+  padding: 10px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
   cursor: pointer;
-  display: none;
 }
 
-.header_logo img {
-  width: 97px;
+.OqueNosFazemos_btn {
+  margin-top: 39px;
+}
+
+.btn_sample_nav:hover {
+  background-color: #00d6de;
+  transition: 1s;
 }
 
 h1 {
@@ -125,10 +134,7 @@ footer a {
   text-decoration: none;
 }
 
-.btn_sample_nav:hover {
-  background-color: #00d6de;
-  transition: 1s;
-}
+
 
 .retangle {
   width: 100px;
@@ -404,23 +410,6 @@ footer a {
   font-size: 20px;
   line-height: 120%;
   text-align: center;
-}
-
-.btn_sample_nav {
-  margin-top: 32px;
-  background-color: #00adb5;
-  color: white;
-  padding: 10px 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
 #botTeste1 {
