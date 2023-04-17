@@ -71,10 +71,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.OqueNosFazemos_btn {
-  margin-top: 39px;
-}
-
 .btn_sample_nav:hover {
   background-color: #00d6de;
   transition: 1s;
@@ -311,10 +307,17 @@ footer a {
   justify-content: left;
 }
 
+.nossosValores_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items:self-start;
+}
+
 .nossosValores_title {
   display: flex;
   gap: 17.30px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .nossosValores_title h2 {
@@ -324,23 +327,13 @@ footer a {
   color: #00ADB5;
 }
 
-.nossosValores_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-}
-
 .nossosValores_list li {
   font-weight: 700;
   font-size: 20px;
   line-height: 50px;
   color: #FFFFFF;
-  list-style: none;
-}
-
-.nossosValores_list li img {
-  padding-right: 20px;
+  list-style: url("../assets/Ellipse\ 20.svg");
+  margin-left: 20px;
 }
 
 #nossosValores_img {
@@ -410,6 +403,10 @@ footer a {
   font-size: 20px;
   line-height: 120%;
   text-align: center;
+}
+
+.OqueNosFazemos_btn {
+  margin-top: 39px;
 }
 
 #botTeste1 {
