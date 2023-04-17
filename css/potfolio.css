@@ -1,0 +1,146 @@
+#div-agro {
+  display: flex;
+  flex-direction: row;
+  margin-top: 106px;
+}
+
+#div_certificacao {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+}
+
+#certificacao_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  text-align: right;
+}
+
+#certificacao_equipamentos_title {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
+#certificacao_equipamentos_text p,
+#div_financeiro h2,
+#div_financeiro p {
+  text-align: right;
+}
+
+.section_portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_more_info {
+
+  margin-bottom: 41px;
+}
+
+.section_more_info_text {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.form-portfolio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-portfolio input {
+  border: 2px solid #00ADB5;
+  border-radius: 4px;
+}
+
+.form-portfolio input::placeholder {
+  color: #141927;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-portfolio button {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #00ADB5;
+  border-radius: 4px;
+  border: none;
+  padding: 7px 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.automacoes {
+  background-color: #2d364f;
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+}
+
+.automacoes_son {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 17px;
+}
+
+.automacoes_son h2 {
+  color: #00ADB5;
+  font-weight: 700;
+  font-size: 31px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  background-color: #2d364f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card p {
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card_text {
+  width: 332.46px;
+}
+
+.card_textNames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11.54px;
+}
+
+.card_textNames h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 10.49px;
+}
+
+.card_textNames,
+.card_textNames h3 {
+  color: #FFFFFF;
+}
