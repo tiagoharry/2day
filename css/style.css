@@ -76,10 +76,6 @@ nav ul li a:hover {
   transition: 1s;
 }
 
-.nav_language {
-left: 0;
-}
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -772,7 +768,7 @@ footer a {
 .footer {
   display: flex;
   justify-content:space-around;
-  align-items: center;
+  align-items:center;
   gap: 331.17px;
   padding: 13px 0;
 }
@@ -781,6 +777,7 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: left;
 }
 
 .footer_logos img {
@@ -794,7 +791,8 @@ footer a {
 .footer_redes {
   display: grid;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+  text-align: right;
 }
 
 .footer_redes1 {
