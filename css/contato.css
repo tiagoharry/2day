@@ -1,5 +1,5 @@
 .form_container {
-  margin-top: 170px;
+  margin-top: 160px;
   margin-bottom: 81px;
   display: grid;
   justify-content: center;
@@ -40,7 +40,11 @@ form textarea {
   width: 631.62px;
   border: 2px solid #1DB5BE;
   border-radius: 4px;
-  padding: 9px 13px;
+  padding: 8px 13px;
+}
+
+form textarea {
+  height: 124px;
 }
 
 .form_checkbox1 {
@@ -81,8 +85,4 @@ form button {
   gap: 10px;
   padding: 7px 0;
   cursor: pointer;
-}
-
-.form_img {
-  width: 500px;
 }
