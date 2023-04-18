@@ -1,33 +1,47 @@
-#div-agro {
-  display: flex;
-  flex-direction: row;
-  margin-top: 106px;
+.portfolio_container {
+  padding: 0 100px;
+  margin-bottom: 79px;
 }
 
-#div_certificacao {
-  text-align: center;
+.agro {
   display: flex;
   flex-direction: row;
-  align-items: self-start;
+  gap: 62px;
+  margin-top: 160px;
 }
 
-#certificacao_text {
+.portfolio_card {
+  display: flex;
+  gap: 62px;
+}
+
+.portfolio_title {
+  display: flex;
+  gap: 17.33px;
+  margin-bottom: 27px;
+  line-height: 37px;
+  align-items: center;
+}
+
+.portfolio_textRight {
+  text-align: right;
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  text-align: right;
+  align-items: self-end;
 }
 
-#certificacao_equipamentos_title {
-  display: flex;
-  justify-content: right;
-  text-align: right;
+.portfolio_title h2 {
+  font-weight: 700;
+  font-size: 31px;
+  color: #00ADB5;
 }
 
-#certificacao_equipamentos_text p,
-#div_financeiro h2,
-#div_financeiro p {
-  text-align: right;
+.portfolio_text p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  width: 463px;
 }
 
 .section_portfolio {
@@ -58,11 +72,14 @@
 .form-portfolio input {
   border: 2px solid #00ADB5;
   border-radius: 4px;
+  width: 550px;
+  height: 36px;
 }
 
 .form-portfolio input::placeholder {
   color: #141927;
   font-family: 'Montserrat', sans-serif;
+  padding-left: 12px;
 }
 
 .form-portfolio button {
@@ -81,17 +98,19 @@
   background-color: #2d364f;
   display: flex;
   flex-direction: column;
-  padding: 0 150px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 150px 64px 150px;
 }
 
-.automacoes_son {
+.automacoes_title {
   margin-top: 70px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
   display: flex;
   gap: 17px;
 }
 
-.automacoes_son h2 {
+.automacoes_title h2 {
   color: #00ADB5;
   font-weight: 700;
   font-size: 31px;
@@ -101,20 +120,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.conj_cards {
+  display: flex;
+  gap: 71.32px;
+  margin-bottom: 32px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
   text-align: center;
   background-color: #2d364f;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
-.card p {
+.card_text p {
   color: white;
   text-align: justify;
   font-size: 16px;
@@ -125,12 +148,17 @@
   width: 332.46px;
 }
 
+.card_textNames_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 102px;
+}
+
 .card_textNames {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 11.54px;
 }
 
 .card_textNames h3 {

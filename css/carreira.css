@@ -1,0 +1,110 @@
+.carreira_part1_container {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  gap: 67px;
+  justify-content: center;
+}
+
+.carreira_part1_title,
+.carreira_part2_title,
+.carreira_part3_title {
+  display: flex;
+  gap: 17.33px;
+  margin-bottom: 24px;
+}
+
+.carreira_part1_title h2,
+.carreira_part2_title h2,
+.carreira_part3_title h2 {
+  font-weight: 700;
+  font-size: 31px;
+  color: #00ADB5;
+  line-height: 37.2px;
+}
+
+.carreira_part1_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #19171C;
+  margin-bottom: 24px;
+}
+
+.carreira_part1_text {
+  font-size: 16px;
+  line-height: 19px;
+  width: 463px;
+  text-align: justify;
+}
+
+.carreira_part2_container {
+  margin-top: 52px;
+  margin-bottom: 64px;
+  background: #2D364F;
+  height: 515px;
+
+}
+
+.carreira_part2 {
+  padding: 64px 0;
+  display: flex;
+  align-items: center;
+  gap: 67px;
+  justify-content: center;
+}
+
+.carreira_part2_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 463px;
+  margin-bottom: 24px;
+
+}
+
+.carreira_part2_text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 463px;
+  text-align: justify;
+}
+
+.carreira_part3_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 67px;
+  margin-bottom: 64px;
+}
+
+.carreira_part3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carreira_part3_text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #19171C;
+  width: 463px;
+  text-align: justify;
+}
+
+.carreira_part3 button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #00ADB5;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 7px 16px;
+  margin-top: 24px;
+  cursor: pointer;
+}
