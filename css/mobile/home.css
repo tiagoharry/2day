@@ -65,11 +65,8 @@
   }
 
   .mentoria_pollygonImg {
-    width: 116px;
-  }
-
-  .mentoria_pollygonImg {
-    margin-top: -600px;
+    width: 56px;
+    margin-top: -572px;
   }
 
   .mentoria_content {
@@ -151,11 +148,11 @@
   .nossosValores {
     gap: 0;
     padding: 64px 0;
+    justify-content: center;
   }
 
   .nossosValores_list {
     justify-content: center;
-    align-items: center;
   }
 
   .nossosValores_title h2 {
@@ -166,6 +163,7 @@
     font-size: 16px;
     line-height: 19px;
     margin-left: 0;
+    width: 327px;
   }
 
   #nossosValores_img {
