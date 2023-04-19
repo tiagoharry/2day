@@ -1,4 +1,6 @@
 @media (max-width: 420px) {
+  
+  
   .whatsapp_img {
     bottom: 220px;
     right: 16.35px;
@@ -26,16 +28,25 @@
   }
 
   .menu-drop {
-    display: block;
-    position: absolute;
+     position: absolute;
     background-color: #2d364f;
     border-radius: 0px 0px 20px 20px;
     border-top: 1px solid #FFFFFF;
-    height: 200px;
+    height: 250px;
     width: 100vw;
     animation: drop-down 1s;
     animation-direction: alternate;
     margin-top: 60px;
+  }
+
+  @keyframes drop-down {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
   }
 
   .menu-drop nav {
@@ -51,7 +62,6 @@
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     color: #FFFFFF;
-    opacity: 0.5;
     font-weight: 600;
     font-size: 18px;
     line-height: 110%;
@@ -291,4 +301,5 @@
   .footer_copyrightDesktop {
     display: none;
   }
+  
 }
