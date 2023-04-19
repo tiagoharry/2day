@@ -17,29 +17,33 @@
   <title>2Day It Solutions</title>
 
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="./assets/logo_header.svg"/>
+  <link rel="stylesheet" href="./css/mobile/home.css">
+  <link rel="icon" href="./assets/logo_header.svg" />
 </head>
 
 <body>
   <header>
-    
-      <div class="header_logo">
-        <a href="index.html"> <img class="header_image"
-            src="./assets/logo_header.svg" alt="Ícone Teasy Solutions"></a>
-      </div>
-      <div class="menu-btn">
-        <img class="icone" src="./assets/menu-hamburger.svg" width="45px" height="45px" alt="Icone Menu"
-          onclick="menuShow()">
-      </div>
-      <nav>
-        <a href="index.html">Quem Somos</a>
-        <a href="portfolio.html">Portfólio</a>
-        <a href="carreira.html">Carreira</a>
-        <a href="contato.html">Contato</a>
-        <a href="#icon_automacoes"class="btn_sample_nav" onclick="menuClose()">Agendar reunião</a>
-        <a class="nav_language" href=""><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
-      </nav>
-      
+
+    <div class="header_logo">
+      <a href="index.html"> <img class="header_image" src="./assets/logo_header.svg" alt="logo 2 day"></a>
+    </div>
+    <div class="menu-btn">
+      <img class="icone" src="./assets/menu-hamburger.svg" width="45px" height="45px" alt="Icone Menu"
+        onclick="menuShow()">
+    </div>
+    <nav class="menu_desktop">
+      <a href="index.html">Quem Somos</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="carreira.html">Carreira</a>
+      <a href="contato.html">Contato</a>
+      <a href="#icon_automacoes" class="btn_sample_nav" onclick="menuClose()">Agendar reunião</a>
+      <a class="nav_language" href=""><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
+    </nav>
+
+    <div class="menu-mobile">
+      <img class="menu-open" src="./assets/menu.svg" alt="">
+      <img class="menu-close hide" src="./assets/close_menu.svg" alt="">
+    </div>
   </header>
 
   <section class="home" id="home">
@@ -51,16 +55,15 @@
         <h2>Trabalhamos na transformação digital das empresas e startups!</h2>
         <p>Somos especializados no desenvolvimento personalizado da tecnologia da informação, formada por times de
           know-how no negócio de cada player.</p>
-        <div> <a class="btn_icon_home" target="_blank"
-            href="https://api.whatsapp.com/send?phone=+5548992051362&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos.">QUERO
-            SABER
-            MAIS <img src="./assets/arrow-right.svg" alt="Ícone Seta"></a></div>
+        <div> <button><a class="btn_icon_home" target="_blank"
+              href="https://api.whatsapp.com/send?phone=+5548992051362&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos.">QUERO
+              SABER
+              MAIS </a><img src="./assets/arrow-right.svg" alt="Ícone Seta"></button>
+        </div>
       </div>
       <img class="home_img" src="./assets/Img_Section1.svg" width="100%" height="100%" alt="Humano e Robô">
     </div>
-    <div class="section_icon_home" id="icon_home">
-
-    </div>
+    
   </section>
 
   <div class="whatsapp_img">
@@ -71,25 +74,29 @@
 
   <section class="mentoria">
     <img class="mentoria_pollygonImg" src="./assets/Polygon 1.png" alt="">
-    <div class="mentoria_text">
-      <div class="mentoria_title">
-        <img src="./assets/Rectangle 9.svg" alt="">
-        <h1>Conheça um pouco sobre<br> a nossa história.</h1>
+
+    <div class="mentoria_content">
+      <div class="mentoria_text">
+        <div class="mentoria_title">
+          <img src="./assets/Rectangle 9.svg" alt="">
+          <h2>Conheça um pouco sobre<br> a nossa história.</h2>
+        </div>
+  
+        <p class="mentoria_paragrathBold">
+          Idealizamos uma empresa focada nas pessoas, sejam elas colaboradores
+          ou parceiros.
+        </p>
+        <p class="mentoria_paragraph">
+          Nascemos do sonho de transformar a região do Pampa Gaúcho por meio
+          do desenvolvimento tecnológico apoiados por talentos nascidos na
+          região. Formamos um time de pessoas que buscam apoiar e desenvolver
+          ideias e negócios através da transformação digital.
+        </p>
       </div>
-
-      <p class="mentoria_paragrathBold">
-        Idealizamos uma empresa focada nas pessoas,<br> sejam elas colaboradores
-        ou parceiros.
-      </p>
-      <p class="mentoria_paragraph">
-        Nascemos do sonho de transformar a região do Pampa Gaúcho por meio
-        do desenvolvimento tecnológico apoiados por talentos nascidos na
-        região. Formamos um time de pessoas que buscam apoiar e desenvolver
-        ideias e negócios através da transformação digital.
-      </p>
+  
+      <img class="mentoria_img" src="./assets/Img_Section2.svg" alt="logo 2Day Principal" />
     </div>
-
-    <img class="img_section2" src="./assets/Img_Section2.svg" alt="logo 2Day Principal" />
+    
 
   </section>
 
@@ -107,13 +114,11 @@
           transparência e segurança.</p>
       </div>
 
-      <img class="botTeste_img" src="./assets/Img_Section3.1.svg" width="100%" height="100%"
-        alt="Smartphone Automação">
+      <img class="botTeste_img" src="./assets/Img_Section3.1.svg" width="100%" height="100%" alt="Smartphone Automação">
     </div>
-    
-    <div class="botTeste_son">
-      <img class="botTeste_img" src="./assets/Img_Section3.2.svg" width="100%" height="100%"
-      alt="Smartphone Automação">
+
+    <div class="botTeste_son botTeste_son2">
+      <img class="botTeste_img" src="./assets/Img_Section3.2.svg" width="100%" height="100%" alt="Smartphone Automação">
       <div class="botTeste_text botTest_text2">
         <div class="botTest_title">
           <img src="./assets/Rectangle 9.svg" alt="">
@@ -124,7 +129,7 @@
           de TI dos nossos clientes com preços competitivos, comprometimento
           com os clientes e parceiros.</p>
       </div>
-      
+
     </div>
 
   </section>
@@ -132,12 +137,12 @@
   <section class=" nossosValores">
     <div class="nossosValores_container">
       <ul class="nossosValores_list">
-       
+
         <div class="nossosValores_title">
           <img src="./assets/Rectangle 9.svg" alt="">
           <h2>Nossos Valores:</h2>
         </div>
-        
+
         <li>Satisfação do cliente</li>
         <li>Valorização dos colaboradores</li>
         <li>Foco nos resultados</li>
@@ -152,8 +157,7 @@
       </ul>
 
     </div>
-    <img id="nossosValores_img" src="./assets/Img_Section4.svg" width="100%"
-      height="100%" alt="Smartphone Automação">
+    <img id="nossosValores_img" src="./assets/Img_Section4.svg" width="100%" height="100%" alt="Smartphone Automação">
   </section>
 
   <section class="section_OqueNosFazemos">
@@ -161,37 +165,41 @@
       <img src="./assets/Rectangle 9.svg" alt="">
       <h2>O que nós fazemos?</h2>
     </div>
-    
+
     <div class="OqueNosFazemos_Son">
-      <div class="startupLab">
-        <img src="./assets/Icon_Startup.svg" alt="Img Startup Lab" class="img_startupLab" />
-        <h2>STARTUP LAB</h2>
-        <p>
-          Trabalhamos como incubadora de ideias e parceiros de Startups,
-          dedicamos um time especializado e com metodologias adaptadas para
-          desenvolver produtos digitais inovadores.
-        </p>
-        <img src="./assets/Img_Section5.1.svg" alt="Img Startup Lab" class="img_startupLab_person" />
+      <div class="OqueNosFazemos_container">
+        <div class="startupLab">
+          <img src="./assets/Icon_Startup.svg" alt="Img Startup Lab" class="img_startupLab" />
+          <h2>STARTUP LAB</h2>
+          <p>
+            Trabalhamos como incubadora de ideias e parceiros de Startups,
+            dedicamos um time especializado e com metodologias adaptadas para
+            desenvolver produtos digitais inovadores.
+          </p>
+          <img class="img_startupLab_person" src="./assets/Img_Section5.1.svg" alt="Img Startup Lab"/>
+        </div>
+        <div class="outsourcing">
+          <img src="./assets/Icon_Outsourcing.svg" alt="Img Icon Outsourcing" class="img_outsourcing" />
+          <h2>OUTSOURCING</h2>
+          <p>
+            Cuidamos da TI da sua empresa para que você tenha dedicação
+            exclusiva no seu negócio. Um time é dedicado exclusivamente para
+            desenvolver as demandas de tecnologia.
+          </p>
+          <img class="img_outsourcing_person" src="./assets/Img_Section5.2.svg" alt="Img Icon Outsourcing"/>
+        </div>
       </div>
-      <div class="outsourcing">
-        <img src="./assets/Icon_Outsourcing.svg" alt="Img Icon Outsourcing" class="img_outsourcing" />
-        <h2>OUTSOURCING</h2>
-        <p>
-          Cuidamos da TI da sua empresa para que você tenha dedicação
-          exclusiva no seu negócio. Um time é dedicado exclusivamente para
-          desenvolver as demandas de tecnologia.
-        </p>
-        <img src="./assets/Img_Section5.2.svg" alt="Img Icon Outsourcing" class="img_outsourcing_person" />
-      </div>
+      
     </div>
 
     <div class="div-call-know">
-      <h2>
+      <p>
         Conheça nossos produtos excepcionais e descubra por que somos a
         escolha número um para aqueles que buscam qualidade, eficiência e
         resultados duradouros.
-      </h2>
-      <button class="OqueNosFazemos_btn">Quero Conhecer Agora Mesmo <img src="./components/assets/arrow-right.svg" alt=""> </button>
+      </p>
+      <button class="OqueNosFazemos_btn">Quero Conhecer Agora Mesmo <img src="./assets/arrow-right.svg"
+          alt=""></button>
     </div>
   </section>
 
@@ -207,12 +215,13 @@
         <p>
           Avenida Tiarajú, 1406 - Pampatec, Sala 33 - Alegrete/RS
         </p>
+        <p class="footer_copyrightMobile">Copyright 2023 © 2DayITSolutions</p>
       </div>
 
       <div class="footer_redes">
         <div class="footer_redes1">
-          <a target="_blank" href="https://instagram.com/2day_it_solutions?igshid=MTA2NDdkNWE="><img src="./assets/instagram.svg"
-              width="25px" height="25px" alt="Logo Instagram"></i></a>
+          <a target="_blank" href="https://instagram.com/2day_it_solutions?igshid=MTA2NDdkNWE="><img
+              src="./assets/instagram.svg" width="25px" height="25px" alt="Logo Instagram"></i></a>
           <a target="_blank" href="https://github.com/teasy-solutions"><img src="./assets/github.svg" width="25px"
               height="25px" alt="Logo Github"></i></a>
           <a target="_blank" href="https://www.linkedin.com/company/2day-it-solutions/"><img src="./assets/linkedin.svg"
@@ -226,7 +235,7 @@
             href="https://api.whatsapp.com/send?phone=+5548992051362&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."><img
               src="./assets/logo-whatsapp.svg" width="25px" height="25px" alt="Logo Whatsapp"></i></a>
         </div>
-        <p>Copyright 2023 © 2DayITSolutions</p>
+        <p class="footer_copyrightDesktop">Copyright 2023 © 2DayITSolutions</p>
 
       </div>
 
