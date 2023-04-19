@@ -1,22 +1,65 @@
 @media (max-width: 420px) {
+  .whatsapp_img {
+    bottom: 220px;
+    right: 16.35px;
+  }
+
   .menu_desktop {
     display: none;
   }
 
   header {
-   
-    
-   
     justify-content: space-between;
     padding: 0 16px;
   }
 
   .header_logo img {
-    width: 58.24px;  
+    width: 58.24px;
+  }
+
+  .menu-mobile {
+    display: block;
   }
 
   .menu-open {
     width: 34px;
+  }
+
+  .menu-drop {
+    display: block;
+    position: absolute;
+    background-color: #2d364f;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 1px solid #FFFFFF;
+    height: 200px;
+    width: 100vw;
+    animation: drop-down 1s;
+    animation-direction: alternate;
+    margin-top: 60px;
+  }
+
+  .menu-drop nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 27px;
+    padding-bottom: 28px;
+  }
+
+  .menu-drop a {
+    margin-left: 12px;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 110%;
+  }
+
+  .menu-drop a:hover {
+    font-weight: 700;
+    opacity: 100%;
   }
 
   .home {
@@ -178,17 +221,19 @@
     gap: 32px;
   }
 
-  .OqueNosFazemos_title { 
+  .OqueNosFazemos_title {
     margin-bottom: 0;
   }
 
-  .startupLab h2, .outsourcing h2 {
+  .startupLab h2,
+  .outsourcing h2 {
     font-size: 20px;
     margin-bottom: -7px;
 
   }
 
-  .startupLab p, .outsourcing p {
+  .startupLab p,
+  .outsourcing p {
     width: 328px;
     font-size: 12px;
     line-height: 14px;
@@ -228,13 +273,14 @@
     gap: 7.67px;
   }
 
-  .footer_logos p, .footer_redes p  {
+  .footer_logos p,
+  .footer_redes p {
     font-size: 8px;
   }
 
   .footer_redes1 {
     gap: 20px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     width: 126px;
   }
 
