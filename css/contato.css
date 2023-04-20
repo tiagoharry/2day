@@ -88,7 +88,7 @@ form button {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   header {
     justify-content: space-between;
     padding: 0 16px;

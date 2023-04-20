@@ -15,6 +15,12 @@
   gap: 62px;
 }
 
+.portfolio_card2  {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 62px;
+}
+
 .portfolio_title {
   display: flex;
   gap: 17.33px;
@@ -27,7 +33,6 @@
   text-align: right;
   display: flex;
   flex-direction: column;
-  align-items: self-end;
 }
 
 .portfolio_title h2 {
@@ -73,6 +78,7 @@
   border-radius: 4px;
   width: 550px;
   height: 36px;
+  background: #EEF2FF;
 }
 
 .form-portfolio input::placeholder {
@@ -171,16 +177,45 @@
   color: #FFFFFF;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   .portfolio_container {
-    margin-top: 160px;
     padding: 0;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .agro {
+    gap: 10px;
+    margin-top: 35px;
   }
 
   .portfolio_card {
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
+    gap: 9px;
+    margin-left: 25px;
+  }
+
+  .portfolio_card2  {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .portfolio_title {
+    margin-bottom: 16px;
+    line-height: 37px;
+  }
+
+  .portfolio_title3 {
+    margin-right: 185px;
+  }
+
+  .portfolio_textRight {
+    text-align: justify;
+  }
+
+  .portfolio_textRight .portfolio_title {
+    margin-left: 25px;
   }
 
   .portfolio_img {
@@ -224,6 +259,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .form-portfolio {

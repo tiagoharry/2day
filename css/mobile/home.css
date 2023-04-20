@@ -1,4 +1,4 @@
-@media (max-width: 420px) {
+@media (max-width: 425px) {
   
   
   .whatsapp_img {
@@ -294,9 +294,13 @@
   }
 
   .footer_redes1 {
-    gap: 20px;
+    gap: 18px;
     flex-wrap: wrap;
-    width: 126px;
+    width: 116px;
+  }
+
+  .footer_redes1 img {
+    width: 16.93px;
   }
 
   .footer_copyrightMobile {
