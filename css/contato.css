@@ -86,3 +86,112 @@ form button {
   padding: 7px 0;
   cursor: pointer;
 }
+
+
+@media (max-width: 420px) {
+  header {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .header_logo img {
+    width: 58.24px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-open {
+    width: 34px;
+  }
+
+  .menu-drop {
+    position: absolute;
+    background-color: #2d364f;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 1px solid #FFFFFF;
+    height: 250px;
+    width: 100vw;
+    animation: drop-down 1s;
+    animation-direction: alternate;
+    margin-top: 60px;
+  }
+
+  .form_container {
+    margin-top: 120px;
+    margin-bottom: 34px;
+  }
+
+  .form_title h2 {
+    width: 282px;
+    font-size: 20px;
+  }
+
+  form p {
+    font-size: 16px;
+    width: 328px;
+  }
+
+  form {
+    gap: 8px;
+  }
+
+  form input,
+form textarea {
+  width: 328px;
+  padding: 8px 13px;
+}
+
+.form_checkbox1 {
+  margin-bottom: 20px;
+}
+
+.form_checkbox1 input,
+.form_checkbox2 input {
+  width: 16px;
+height: 16px;
+}
+
+.form_checkbox1 p,
+.form_checkbox2 p {
+  font-size: 10px;
+}
+
+form button {
+  font-size: 16px;
+
+}
+  .form_img {
+    display: none;
+  }
+
+  .footer {
+    gap: 21px;
+    padding: 13px 16px;
+  }
+
+  .footer_logos {
+    gap: 7.67px;
+  }
+
+  .footer_logos p,
+  .footer_redes p {
+    font-size: 8px;
+  }
+
+  .footer_redes1 {
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 126px;
+  }
+
+  .footer_copyrightMobile {
+    display: block;
+  }
+
+  .footer_copyrightDesktop {
+    display: none;
+  }
+
+}
