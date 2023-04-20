@@ -165,6 +165,18 @@
   align-items: center;
 }
 
+.card_textNames1 {
+  margin-top: 40px;
+}
+
+.card_textNames2 {
+  margin-top: 77px;
+}
+
+.card_textNames3 {
+  margin-top: 62px;
+}
+
 .card_textNames h3 {
   font-weight: 700;
   font-size: 22px;
@@ -281,6 +293,15 @@
     margin-bottom: 16px;
   }
 
+  .automacoes {
+    padding: 0 0 0 25px;
+  }
+
+  .automacoes_title {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+
   .automacoes_title h2 { 
     font-size: 16px;
   }
@@ -288,9 +309,5 @@
   .conj_cards {
     flex-direction: column;
     justify-content: center;
-  }
-
-  .card_textNames_container {
-    flex-direction: column;
   }
 }
