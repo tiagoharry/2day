@@ -231,6 +231,11 @@
     gap: 32px;
   }
 
+  .OqueNosFazemos_container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
   .OqueNosFazemos_title {
     margin-bottom: 0;
   }
@@ -303,3 +308,4 @@
   }
   
 }
+

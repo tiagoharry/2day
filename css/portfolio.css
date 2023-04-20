@@ -51,7 +51,6 @@
 }
 
 .section_more_info {
-
   margin-bottom: 41px;
 }
 
@@ -134,7 +133,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #2d364f;
 }
 
 .card_text p {
@@ -171,4 +169,92 @@
 .card_textNames,
 .card_textNames h3 {
   color: #FFFFFF;
+}
+
+@media (max-width: 420px) {
+  .portfolio_container {
+    margin-top: 160px;
+    padding: 0;
+  }
+
+  .portfolio_card {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .portfolio_img {
+    width: 328.6px;
+  }
+
+  .agro h2 {
+    font-size: 20px;
+  }
+
+  .agro p{
+    font-size: 16px;
+    line-height: 19px;
+    width: 338px;
+  }
+
+  .portfolio_card2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .portfolio_textRight {
+    text-align: justify;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .section_more_info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .section_more_info_text {
+    font-size: 16px;    
+    line-height: 19px;
+    width: 288px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-portfolio {
+    flex-direction: column;
+  }
+
+  .more_info_p2 {
+    width: 270px;
+  }
+
+  .form-portfolio input {
+    width: 329px;
+  }
+
+  .form-portfolio button {
+    font-size: 16px;
+    align-items: center;
+    margin-top: -8px;
+    margin-bottom: 16px;
+  }
+
+  .automacoes_title h2 { 
+    font-size: 16px;
+  }
+
+  .conj_cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card_textNames_container {
+    flex-direction: column;
+  }
 }

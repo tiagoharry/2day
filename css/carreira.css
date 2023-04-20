@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.carreira_part1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .carreira_part1_title,
 .carreira_part2_title,
 .carreira_part3_title {
@@ -42,7 +48,6 @@
   margin-bottom: 64px;
   background: #2D364F;
   height: 515px;
-
 }
 
 .carreira_part2 {
@@ -107,4 +112,122 @@
   padding: 7px 16px;
   margin-top: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  header {
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .header_logo img {
+    width: 58.24px;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-open {
+    width: 34px;
+  }
+
+  .menu-drop {
+    position: absolute;
+    background-color: #2d364f;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 1px solid #FFFFFF;
+    height: 250px;
+    width: 100vw;
+    animation: drop-down 1s;
+    animation-direction: alternate;
+    margin-top: 60px;
+  }
+
+  .carreira_part1_container {
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .carreira_part1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 18px;
+    margin-left: 20px;
+  }
+
+  .carreira_part3_container {
+    margin-top: -30px;
+    gap: 18px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carreira_part2_container {
+    
+    height: 700px;
+  }
+
+  .carreira_part2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .carreira_part1_title h2,
+  .carreira_part2_title h2,
+  .carreira_part3_title h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .carreira_part1_text,
+  .carreira_part2_subtitle,
+  .carreira_part2_text,
+  .carreira_part3_text {
+    width: 328px;
+
+  }
+
+  .carreira_part2_subtitle {
+    font-size: 16px;
+  }
+
+  .carreira_part1_img,
+  .carreira_part2_img,
+  .carreira_part3_img {
+    width: 326.84px;
+
+  }
+
+  .footer {
+    gap: 21px;
+    padding: 13px 16px;
+  }
+
+  .footer_logos {
+    gap: 7.67px;
+  }
+
+  .footer_logos p,
+  .footer_redes p {
+    font-size: 8px;
+  }
+
+  .footer_redes1 {
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 126px;
+  }
+
+  .footer_copyrightMobile {
+    display: block;
+  }
+
+  .footer_copyrightDesktop {
+    display: none;
+  }
 }

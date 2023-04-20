@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,63 +15,89 @@
   <meta http-equiv="pragma" content="no-cache">
   <meta name="robots" content="all">
   <title>Portfólio</title>
-
+  <link rel="stylesheet" href="./css/mobile/home.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/potfolio.css">
   <link rel="stylesheet" href="./css/carreira.css">
-  <link rel="icon" href="./assets/logo_header.svg" />
+  <link rel="icon" href="./assets/logo_header.svg">
+
+  <script src="./javaScript/main.js" defer></script>
 </head>
+
 <body>
 
   <header>
 
     <div class="header_logo">
-      <a href="index.html"> <img class="header_image" src="./assets/logo_header.svg" alt="Ícone Teasy Solutions"></a>
+      <a href="index.html"> <img class="header_image" src="./assets/logo_header.svg" alt="logo 2 day"></a>
     </div>
-    <div class="menu-btn">
-      <img class="icone" src="./assets/menu-hamburger.svg" width="45px" height="45px" alt="Icone Menu"
-        onclick="menuShow()">
+
+    <nav class="menu_desktop">
+      <a href="index.html">Quem Somos</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="carreira.html">Carreira</a>
+      <a href="contato.html">Contato</a>
+      <a href="#icon_automacoes" class="btn_sample_nav">Agendar reunião</a>
+      <a class="nav_language" href=""><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
+    </nav>
+
+    <div class="menu-mobile">
+      <img class="menu-open" src="./assets/menu.svg" alt="">
+      <img class="menu-close hide" src="./assets/close_menu.svg" alt="">
     </div>
+  </header>
+
+  <div class="menu-drop hide">
     <nav>
       <a href="index.html">Quem Somos</a>
       <a href="portfolio.html">Portfólio</a>
       <a href="carreira.html">Carreira</a>
       <a href="contato.html">Contato</a>
-      <a href="#icon_automacoes" class="btn_sample_nav" onclick="menuClose()">Agendar reunião</a>
+      <a href="#icon_automacoes" class="btn_sample_nav">Agendar reunião</a>
       <a class="nav_language" href=""><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
     </nav>
-
-  </header>
+  </div>
 
   <main>
 
     <div class="carreira_part1_container">
       <div class="carreira_part1">
-        <div class="carreira_part1_title">
-          <img src="./assets/Rectangle 9.svg" alt="">
-              <h2>Venha crescer conosco</h2>
+        <div class="carreira_part1_info">
+          <div class="carreira_part1_title">
+            <img src="./assets/Rectangle 9.svg" alt="">
+            <h2>Venha crescer conosco</h2>
+          </div>
+          <p class="carreira_part1_subtitle">Faça parte da nossa equipe de sucesso.</p>
+          <p class="carreira_part1_text">Acreditamos que a construção de uma cultura de diversidade é fundamental, por
+            isso investimos para que nossos espaços de trabalho sejam locais de crescimento profissional e pessoal. Para
+            isso investimos na diversidade, na equidade e na inclusão, em nossos espaço de trabalho.</p>
         </div>
-        <p class="carreira_part1_subtitle">Faça parte da nossa equipe de sucesso.</p>
-        <p class="carreira_part1_text">Acreditamos que  a construção de uma cultura de diversidade é fundamental, por isso investimos para que nossos espaços de trabalho sejam locais de crescimento profissional e pessoal. Para isso investimos na diversidade, na equidade e na inclusão, em nossos espaço de trabalho.</p>
+
+
+        <img class="carreira_part1_img" src="./assets/img_carreira_1.svg" alt="">
       </div>
-      <img class="carreira_part1_img" src="./assets/img_carreira_1.svg" alt="">
     </div>
 
     <div class="carreira_part2_container">
-     
-        <div class="carreira_part2">
-          <img class="carreira_part2_img" src="./assets/img_carreira_2.svg" alt="">
 
-          <div class="carreira_part2_info">
-            <div class="carreira_part2_title">
-              <img src="./assets/Rectangle 9.svg" alt="">
-                  <h2>Conheça a nossa sede<br> em Alegrete-RS</h2>
-            </div>
-            <p class="carreira_part2_subtitle">Venha conhecer a nossa sede em Alegrete e descubra o que essa cidade tem a oferecer.</p>
-            <p class="carreira_part2_text">Alegrete é uma cidade do interior do Rio Grande do Sul, possui uma população acolhedora e uma cultura rica em tradições gaúchas. Alegrete é uma cidade em crescimento e oferece uma infraestrutura completa para quem deseja trabalhar e crescer profissionalmente. Possuimos uma estrutura moderna e confortável, oferecemos um ambiente de trabalho agradável e inspirador para os nossos colaboradores.</p>
+      <div class="carreira_part2">
+        <img class="carreira_part2_img" src="./assets/img_carreira_2.svg" alt="">
+
+        <div class="carreira_part2_info">
+          <div class="carreira_part2_title">
+            <img src="./assets/Rectangle 9.svg" alt="">
+            <h2>Conheça a nossa sede<br> em Alegrete-RS</h2>
           </div>
-          </div>
-      
+          <p class="carreira_part2_subtitle">Venha conhecer a nossa sede em Alegrete e descubra o que essa cidade tem a
+            oferecer.</p>
+          <p class="carreira_part2_text">Alegrete é uma cidade do interior do Rio Grande do Sul, possui uma população
+            acolhedora e uma cultura rica em tradições gaúchas. Alegrete é uma cidade em crescimento e oferece uma
+            infraestrutura completa para quem deseja trabalhar e crescer profissionalmente. Possuimos uma estrutura
+            moderna e confortável, oferecemos um ambiente de trabalho agradável e inspirador para os nossos
+            colaboradores.</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="carreira_part3_container">
@@ -78,11 +105,12 @@
         <div class="carreira_part3_info">
           <div class="carreira_part3_title">
             <img src="./assets/Rectangle 9.svg" alt="">
-                <h2>Se torne um grande<br> profissional de sucesso</h2>
+            <h2>Se torne um grande<br> profissional de sucesso</h2>
           </div>
-          <p class="carreira_part3_text">Não perca a oportunidade de fazer carreira na nossa empresa, envie seu currículo e venha fazer parte da nossa equipe.</p>
+          <p class="carreira_part3_text">Não perca a oportunidade de fazer carreira na nossa empresa, envie seu
+            currículo e venha fazer parte da nossa equipe.</p>
         </div>
-        
+
         <button>Enviar Currículo<img src="./assets/arrow-right.svg" alt="Ícone Seta"></button>
       </div>
       <img class="carreira_part3_img" src="./assets/img_carreira_3.svg" alt="">
@@ -101,6 +129,7 @@
         <p>
           Avenida Tiarajú, 1406 - Pampatec, Sala 33 - Alegrete/RS
         </p>
+        <p class="footer_copyrightMobile">Copyright 2023 © 2DayITSolutions</p>
       </div>
 
       <div class="footer_redes">
@@ -120,11 +149,12 @@
             href="https://api.whatsapp.com/send?phone=+5548992051362&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."><img
               src="./assets/logo-whatsapp.svg" width="25px" height="25px" alt="Logo Whatsapp"></i></a>
         </div>
-        <p>Copyright 2023 © 2DayITSolutions</p>
+        <p class="footer_copyrightDesktop">Copyright 2023 © 2DayITSolutions</p>
 
       </div>
 
   </footer>
-  
+
 </body>
+
 </html>
