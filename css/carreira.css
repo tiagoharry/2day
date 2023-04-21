@@ -160,14 +160,15 @@
   }
 
   .carreira_part2_container {
+    height: 690px;
     
-    height: 700px;
   }
 
   .carreira_part2 {
     flex-direction: column;
     align-items: center;
     gap: 17px;
+    padding: 32px 0;
   }
 
   .carreira_part1_title h2,

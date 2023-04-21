@@ -34,16 +34,26 @@
     height: 250px;
     width: 100vw;
     animation: drop-down 1s;
-    animation-direction: alternate;
+    transition: all 1s ease; 
   }
 
   @keyframes drop-down {
-    from {
+    0% {
       transform: translateX(100%);
     }
 
-    to {
+    100% {
       transform: translateY(0);
+    }
+  }
+
+  @keyframes up {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateY(100%);
     }
   }
 
