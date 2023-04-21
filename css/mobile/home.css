@@ -1,9 +1,8 @@
 @media (max-width: 425px) {
-  
-  
+
+
   .whatsapp_img {
-    bottom: 220px;
-    right: 16.35px;
+    display: none;
   }
 
   .menu_desktop {
@@ -13,6 +12,7 @@
   header {
     justify-content: space-between;
     padding: 0 16px;
+    position: inherit;
   }
 
   .header_logo img {
@@ -28,7 +28,7 @@
   }
 
   .menu-drop {
-     position: absolute;
+    position: absolute;
     background-color: #2d364f;
     border-radius: 0px 0px 20px 20px;
     border-top: 1px solid #FFFFFF;
@@ -43,7 +43,7 @@
     from {
       transform: translateX(100%);
     }
-  
+
     to {
       transform: translateY(0);
     }
@@ -208,6 +208,10 @@
     justify-content: center;
   }
 
+  .nossosValores_title {
+    margin-bottom: 32px;
+  }
+
   .nossosValores_title h2 {
     font-size: 20px;
   }
@@ -215,8 +219,12 @@
   .nossosValores_list li {
     font-size: 16px;
     line-height: 19px;
-    margin-left: 0;
     width: 327px;
+    margin-bottom: 21px;
+  }
+
+  li p {
+    margin-left: 26px;
   }
 
   #nossosValores_img {
@@ -299,9 +307,9 @@
     width: 116px;
   }
 
-  .footer_redes1 img {
+  /*.footer_redes1 img {
     width: 16.93px;
-  }
+  }*/
 
   .footer_copyrightMobile {
     display: block;
@@ -310,6 +318,5 @@
   .footer_copyrightDesktop {
     display: none;
   }
-  
-}
 
+}

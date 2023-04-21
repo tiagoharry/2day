@@ -92,6 +92,8 @@ form button {
   header {
     justify-content: space-between;
     padding: 0 16px;
+    position: inherit;
+    margin-bottom: -60px;
   }
 
   .header_logo img {
@@ -104,18 +106,6 @@ form button {
 
   .menu-open {
     width: 34px;
-  }
-
-  .menu-drop {
-    position: absolute;
-    background-color: #2d364f;
-    border-radius: 0px 0px 20px 20px;
-    border-top: 1px solid #FFFFFF;
-    height: 250px;
-    width: 100vw;
-    animation: drop-down 1s;
-    animation-direction: alternate;
-    margin-top: 60px;
   }
 
   .form_container {

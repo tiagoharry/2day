@@ -190,6 +190,15 @@
 }
 
 @media (max-width: 425px) {
+
+  header {
+    position: inherit;
+  }
+
+  .menu-drop {
+   margin-top: 0;
+ }
+
   .portfolio_container {
     padding: 0;
     margin-top: 120px;
@@ -300,6 +309,7 @@
   .automacoes_title {
     margin-top: 36px;
     margin-bottom: 36px;
+    align-items: center;
   }
 
   .automacoes_title h2 { 
