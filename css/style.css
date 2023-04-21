@@ -47,6 +47,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 120px;
+  z-index: 1;
 }
 
 .header_logo img {
@@ -159,13 +160,13 @@ nav a:hover {
   width: 359.84px;
 }
 
-.retangle {
+/*.retangle {
   width: 100px;
   height: 8px;
   background: #5252ff;
   border-radius: 8px;
-  z-index: 999;
-}
+  z-index: -1;
+}*/
 
 .whatsapp_img {
   position: fixed;
