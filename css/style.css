@@ -432,7 +432,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items:end;
   gap: 331.17px;
   padding: 13px 0;
 }
