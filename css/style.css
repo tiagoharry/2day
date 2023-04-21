@@ -324,10 +324,10 @@ nav a:hover {
 .nossosValores_list li {
   font-weight: 700;
   font-size: 20px;
-  line-height: 50px;
   color: #FFFFFF;
   list-style: url("../assets/Ellipse\ 20.svg");
   margin-left: 20px;
+  margin-bottom: 26px;
 }
 
 li p {
