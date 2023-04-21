@@ -36,7 +36,6 @@
     width: 100vw;
     animation: drop-down 1s;
     animation-direction: alternate;
-    margin-top: 60px;
   }
 
   @keyframes drop-down {
