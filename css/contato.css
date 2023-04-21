@@ -59,17 +59,86 @@ form textarea {
 }
 
 .form_checkbox1 input,
-.form_checkbox2 input {
-  border: 2px solid #00ADB5;
-  border-radius: 2px;
-  width: 24px;
-  height: 24px;
-}
+  .form_checkbox2 input {
+    width: 16px;
+    height: 16px;
+    background-color: #EEF2FF;
+    border: 2px solid #00ADB5;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .form_checkbox1 input:checked, 
+  .form_checkbox2 input:checked {
+    background: #00ADB5;
+    border-radius: 2px;
+  }
 
 .form_checkbox1 p,
 .form_checkbox2 p {
   font-size: 16px;
   font-weight: 400;
+}
+
+.container {
+  display: block;
+  position: relative;
+  
+  padding-left: 30px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 2px;
+  border: 3px solid #00ADB5;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #00ADB5;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 4px;
+  top: 0;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-radius: 2px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 form button {
@@ -88,7 +157,7 @@ form button {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 820px) {
   header {
     justify-content: space-between;
     padding: 0 16px;
@@ -109,8 +178,7 @@ form button {
 
   .form_container {
     margin-top: 48px;
-    margin-bottom: 34px;
-    margin-left: 20px;
+    margin-bottom: 34px; 
   }
 
   .form_title h2 {
@@ -143,20 +211,33 @@ form button {
     margin-bottom: 15px;
   }
 
-  .form_checkbox1 input,
-  .form_checkbox2 input {
-    width: 16px;
-    height: 16px;
-    background-color: #EEF2FF;
-  }
-
   .form_checkbox1 p,
   .form_checkbox2 p {
     font-size: 10px;
   }
 
+  .container {   
+    font-size: 10px; 
+    width: 325px;
+    padding-left: 25px;
+  }
+
+  .checkmark {
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+  }
+
+  .container .checkmark:after {
+    left: 1px;
+    top: -1px;
+    width: 4px;
+    height: 7px;
+  }
+
   form button {
-    margin-top: 16px;
+    margin-top: 0;
     font-size: 16px;
     width: 328px;
   }

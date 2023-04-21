@@ -189,7 +189,7 @@
   color: #FFFFFF;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 820px) {
 
   header {
     position: inherit;

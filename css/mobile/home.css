@@ -1,4 +1,4 @@
-@media (max-width: 425px) {
+@media (max-width: 820px) {
 
   .whatsapp_img {
     display: none;
@@ -73,6 +73,11 @@
   .home {
     margin-top: 17px;
     margin-bottom: 0;
+  }
+
+  .home_son {  
+    justify-content: center;
+    margin-bottom: 100px;
   }
 
   .img_2day_principal {
@@ -318,3 +323,4 @@
   }
 
 }
+
