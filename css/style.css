@@ -118,8 +118,6 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
-  /*padding-left: 120px;*/
-  /*padding-top: 60px;*/
 }
 
 .home_son_text {
@@ -159,14 +157,6 @@ nav a:hover {
 .img_2day_principal {
   width: 359.84px;
 }
-
-/*.retangle {
-  width: 100px;
-  height: 8px;
-  background: #5252ff;
-  border-radius: 8px;
-  z-index: -1;
-}*/
 
 .whatsapp_img {
   position: fixed;
@@ -411,6 +401,10 @@ li p {
   font-size: 20px;
   line-height: 120%;
   text-align: center;
+}
+
+.div-call-know a {
+  text-decoration: none;
 }
 
 .OqueNosFazemos_btn {

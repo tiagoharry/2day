@@ -303,6 +303,7 @@
   .footer {
     gap: 21px;
     padding: 13px 16px;
+    align-items: center;
   }
 
   .footer_logos {
@@ -315,9 +316,9 @@
   }
 
   .footer_redes1 {
-    gap: 18px;
-    flex-wrap: wrap;
-    width: 116px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12.26px;
   }
 
   /*.footer_redes1 img {

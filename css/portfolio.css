@@ -1,6 +1,8 @@
 .portfolio_container {
   padding: 0 100px;
   margin-bottom: 79px;
+  display:grid; 
+  justify-content: center;
 }
 
 .agro {
@@ -29,16 +31,26 @@
   align-items: center;
 }
 
-.portfolio_textRight {
+.portfolio_title2 h2{
   text-align: right;
+}
+
+.portfolio_textRight {
+  text-align: justify;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
+
+/*.portfolio_textRight .portfolio_title h2{
+  
+}*/
 
 .portfolio_title h2 {
   font-weight: 700;
   font-size: 31px;
   color: #00ADB5;
+  width: 303px;
 }
 
 .portfolio_text p {
@@ -103,13 +115,16 @@
   background-color: #2d364f;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
-  padding: 0 150px 64px 150px;
+  padding-top: 70px;
+  padding-bottom: 64px;
+}
+
+.automacoes_container {
+  margin: 0 auto;
 }
 
 .automacoes_title {
-  margin-top: 70px;
   margin-bottom: 64px;
   display: flex;
   gap: 17px;
@@ -123,7 +138,7 @@
 
 .cards {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
   flex-direction: column;
 }
@@ -170,7 +185,7 @@
 }
 
 .card_textNames2 {
-  margin-top: 77px;
+  margin-top: 80px;
 }
 
 .card_textNames3 {
@@ -213,7 +228,7 @@
     flex-direction: column-reverse;
     justify-content: center;
     gap: 9px;
-    margin-left: 25px;
+    /*margin-left: 25px;*/
   }
 
   .portfolio_card2  {
@@ -235,8 +250,12 @@
     text-align: justify;
   }
 
+  .portfolio_textRight .portfolio_title h2{
+    text-align: left;
+  }
+
   .portfolio_textRight .portfolio_title {
-    margin-left: 25px;
+    /*margin-left: 25px;*/
   }
 
   .portfolio_img {
@@ -303,12 +322,14 @@
   }
 
   .automacoes {
-    padding: 0 0 0 25px;
+    padding: 0 14px 0 14px;
+    align-items: center;
   }
 
   .automacoes_title {
     margin-top: 36px;
     margin-bottom: 36px;
+   
     align-items: center;
   }
 
