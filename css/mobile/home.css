@@ -26,6 +26,10 @@
     width: 34px;
   }
 
+  .menu-close span {
+    color: #00ADB5;
+  }
+
   .menu-drop {
     position: absolute;
     background-color: #2d364f;
@@ -48,12 +52,12 @@
   }
 
   @keyframes up {
-    0% {
-      transform: translateX(0);
+    100% {
+      transform: translateX(100%);
     }
 
-    100% {
-      transform: translateY(100%);
+    0% {
+      transform: translateY(0);
     }
   }
 
