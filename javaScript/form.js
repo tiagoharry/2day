@@ -35,12 +35,6 @@ const sendToSlack = () => {
 
 }
 
-/*const send = document.querySelector('.send');
+const send = document.querySelector('.send');
 
-send.addEventListener('click', () => {
-  const enviar = sendToSlack;
-
-  console.log('Dados recebidos:', data);
-  
-  return enviar;
-})*/
+send.addEventListener('click', sendToSlack);

@@ -22,3 +22,7 @@ const sendToSlack = () => {
         console.error('Erro ao buscar dados:', error);
     });
 }
+
+const send = document.querySelector('.send');
+
+send.addEventListener('click', sendToSlack);

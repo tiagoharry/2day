@@ -322,12 +322,9 @@
   .footer_redes1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12.26px;
+    row-gap: 10px;
+    
   }
-
-  /*.footer_redes1 img {
-    width: 16.93px;
-  }*/
 
   .footer_copyrightMobile {
     display: block;

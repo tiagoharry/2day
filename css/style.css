@@ -101,7 +101,7 @@ nav a:hover {
   transition: 1s;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -367,7 +367,8 @@ li p {
   gap: 24px;
 }
 
-.startupLab p, .outsourcing p {
+.startupLab p,
+.outsourcing p {
   width: 465px;
 }
 
@@ -415,9 +416,9 @@ li p {
 }
 
 footer {
-  padding: 10px 0px;
-  display: flex;
-  flex-direction: row;
+  padding: 10px 18px;
+  display: grid;
+  text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #2d364f;
@@ -428,7 +429,7 @@ footer {
 .footer {
   display: flex;
   justify-content: space-around;
-  align-items:end;
+  align-items: end;
   gap: 331.17px;
   padding: 13px 0;
 }
@@ -471,9 +472,18 @@ footer {
   color: #FFFFFF;
 }
 
+.mihoLogo_footer {
+  font-size: 10px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.mihoLogo_footer img{
+  width: 37.35px;
+}
+
 .icone {
   height: 105px;
   color: white;
   padding: 0px 0px 40px 0px;
 }
-
