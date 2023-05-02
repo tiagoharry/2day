@@ -16,7 +16,7 @@ const sendToSlack = () => {
   `
 
   // @todo
-  fetch('https://hooks.slack.com/services/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', {
+  fetch('https://hooks.slack.com/services/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', {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
@@ -32,15 +32,15 @@ const sendToSlack = () => {
     .catch(error => {
       console.error('Erro ao buscar dados:', error);
     });
+
 }
 
-const send = document.querySelector('.send');
+/*const send = document.querySelector('.send');
 
 send.addEventListener('click', () => {
   const enviar = sendToSlack;
 
+  console.log('Dados recebidos:', data);
+  
   return enviar;
-})
-
-
-
+})*/

@@ -66,10 +66,10 @@
       <div class="form">
         <form action="">
           <p>Preencha o formulário e deixe a sua mensagem.</p>
-          <input type="text" placeholder="Nome" id="name" required>
-          <input type="email" placeholder="E-mail" id="email" required>
-          <input type="tel" placeholder="Telefone" id="phone" maxlength="11" required>
-          <textarea name="" id="" cols="30" rows="10" id="message" placeholder="Mensagem"></textarea>
+          <input type="text" id="name" placeholder="Nome" required>
+          <input type="email" id="email" placeholder="E-mail" required>
+          <input type="tel" id="phone" placeholder="Telefone" maxlength="11" required>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
           <div class="checkbox">
             <!--<div class="form_checkbox1">
               <input type="checkbox" name="" id="">
@@ -89,7 +89,7 @@
             </label>
           </div>
          
-          <button type="submit" class="send">ENVIAR<img src="./assets/arrow-right.svg" alt="Ícone Seta"></button>
+          <button type="submit" value="submit" class="send" onclick="sendToSlack()">ENVIAR<img src="./assets/arrow-right.svg" alt="Ícone Seta"></button>
         </form>
         <img class="form_img" src="./assets/contact-image.svg" alt="">
       </div>
