@@ -128,6 +128,10 @@ nav a:hover {
   margin-top: 124.13px;
 }
 
+.img_2day_principal {
+  width: 359.84px;
+}
+
 .home_son_text h2 {
   width: 417.51px;
   text-align: left;
@@ -154,8 +158,8 @@ nav a:hover {
   color: #FFFFFF;
 }
 
-.img_2day_principal {
-  width: 359.84px;
+.home_img {
+  width: 803.21px;
 }
 
 .whatsapp_img {
@@ -236,6 +240,10 @@ nav a:hover {
   width: 410px;
 }
 
+.mentoria_img {
+  width: 623px;
+}
+
 .botTeste {
   margin-top: 80px;
   display: flex;
@@ -279,6 +287,10 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: self-end;
+}
+
+.botTeste_img {
+  width: 617.58px;
 }
 
 .nossosValores {
@@ -365,6 +377,10 @@ li p {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+
+.img_startupLab_person, .img_outsourcing_person {
+  width: 565px;
 }
 
 .startupLab p,
@@ -478,7 +494,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.mihoLogo_footer img{
+.mihoLogo_footer img {
   width: 37.35px;
 }
 
