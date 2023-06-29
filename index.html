@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
   <script src="./javaScript/main.js" defer></script>
+  
+  <script src="./javaScript/englishText/index.js" defer></script>
+  <script src="./javaScript/englishText/menu.js" defer></script>
 </head>
 
 <body>
@@ -33,12 +36,12 @@
     </div>
 
     <nav class="menu_desktop">
-      <a href="index.html">Quem Somos</a>
-      <a href="portfolio.html">Portfólio</a>
-      <a href="carreira.html">Carreira</a>
-      <a href="contato.html">Contato</a>
-      <a href="mailto:contato@2dayitsolutions.com" class="btn_sample_nav">Agendar Reunião</a>
-      <a class="nav_language" href=""><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
+      <a class="about" href="index.html">Quem Somos</a>
+      <a class="services" href="portfolio.html">Portfólio</a>
+      <a class="career" href="carreira.html">Carreira</a>
+      <a class="contact" href="contato.html">Contato</a>
+      <a class="apointment" href="mailto:contato@2dayitsolutions.com" class="btn_sample_nav">Agendar Reunião</a>
+      <a class="nav_language" href="#"><img src="./assets/globe_header.svg" alt=""> PT-BR</a>
     </nav>
 
     <div class="menu-mobile">
@@ -68,8 +71,8 @@
 
         <img class="img_2day_principal" src="./assets/logo_2Day_Principal.svg" alt="logo 2Day" />
 
-        <h2>Trabalhamos na transformação digital das empresas e startups!</h2>
-        <p>Somos especializados no desenvolvimento personalizado da tecnologia da informação, formada por times de
+        <h2 class="principal_title">Trabalhamos na transformação digital das empresas e startups!</h2>
+        <p class="principal_text">Somos especializados no desenvolvimento personalizado da tecnologia da informação, formada por times de
           know-how no negócio de cada player.</p>
         <div> <button><a class="btn_icon_home" target="_blank"
               href="https://api.whatsapp.com/send?phone=+5548992051362&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos.">QUERO
@@ -95,7 +98,7 @@
       <div class="mentoria_text">
         <div class="mentoria_title">
           <img src="./assets/Rectangle 9.svg" alt="">
-          <h2>Conheça um pouco sobre<br> a nossa história.</h2>
+          <h2 class="mentoria_h2">Conheça um pouco sobre<br> a nossa história.</h2>
         </div>
 
         <p class="mentoria_paragrathBold">
@@ -122,9 +125,9 @@
         <div class="botTest_title">
 
           <img src="./assets/Rectangle 9.svg" alt="">
-          <h2>Nossa Missão:</h2>
+          <h2 class="mission_title">Nossa Missão:</h2>
         </div>
-        <p class="botTeste_text">Desenvolver a transformação digital das empresas e startups, com inovação, excelência
+        <p class="botTeste_text mission_text">Desenvolver a transformação digital das empresas e startups, com inovação, excelência
           em
           qualidade,
           transparência e segurança.</p>
@@ -138,10 +141,10 @@
       <div class="botTeste_text botTest_text2">
         <div class="botTest_title">
           <img src="./assets/Rectangle 9.svg" alt="">
-          <h2>Nossa Visão:</h2>
+          <h2 class="vision_title">Nossa Visão:</h2>
         </div>
 
-        <p class="botTeste_text"> Ser referência como empresas de tecnologia, atuando como extensão
+        <p class="botTeste_text vision_text"> Ser referência como empresas de tecnologia, atuando como extensão
           de TI dos nossos clientes com preços competitivos, comprometimento
           com os clientes e parceiros.</p>
       </div>
@@ -156,20 +159,20 @@
 
         <div class="nossosValores_title">
           <img src="./assets/Rectangle 9.svg" alt="">
-          <h2>Nossos Valores:</h2>
+          <h2 class="valores_title">Nossos Valores:</h2>
         </div>
 
-        <li><p>Satisfação do cliente</p></li>
-        <li><p>Valorização dos colaboradores</p></li>
-        <li><p>Foco nos resultados</p></li>
-        <li><p>Atuar como parte integrante da empresa: juntos nossa marca é maisforte!</p></li>
-        <li><p>Ser parceiro e socio dos nossos clientes</p></li>
-        <li><p>Comprometimento com o cliente</p></li>
-        <li><p>Ética e transparência</p></li>
-        <li><p>Cursos baixos e benefício compensatório</p></li>
-        <li><p>Busca por desafios tecnológicos de impacto</p></li>
-        <li><p>Respeito, desenvolvimento e reconhecimento</p></li>
-        <li><p>Simplicidade e liberdade de expressão</p></li>
+        <li><p class="list1">Satisfação do cliente</p></li>
+        <li><p class="list2">Valorização dos colaboradores</p></li>
+        <li><p class="list3">Foco nos resultados</p></li>
+        <li><p class="list4">Atuar como parte integrante da empresa: juntos nossa marca é maisforte!</p></li>
+        <li><p class="list5">Ser parceiro e socio dos nossos clientes</p></li>
+        <li><p class="list6">Comprometimento com o cliente</p></li>
+        <li><p class="list7">Ética e transparência</p></li>
+        <li><p class="list8">Cursos baixos e benefício compensatório</p></li>
+        <li><p class="list9">Busca por desafios tecnológicos de impacto</p></li>
+        <li><p class="list10">Respeito, desenvolvimento e reconhecimento</p></li>
+        <li><p class="list11">Simplicidade e liberdade de expressão</p></li>
       </ul>
 
     </div>
@@ -179,7 +182,7 @@
   <section class="section_OqueNosFazemos">
     <div class="OqueNosFazemos_title">
       <img src="./assets/Rectangle 9.svg" alt="">
-      <h2>O que nós fazemos?</h2>
+      <h2 class="queFazemos_title">O que nós fazemos?</h2>
     </div>
 
     <div class="OqueNosFazemos_Son">
@@ -187,7 +190,7 @@
         <div class="startupLab">
           <img src="./assets/Icon_Startup.svg" alt="Img Startup Lab" class="img_startupLab" />
           <h2>STARTUP LAB</h2>
-          <p>
+          <p class="starTup_text">
             Trabalhamos como incubadora de ideias e parceiros de Startups,
             dedicamos um time especializado e com metodologias adaptadas para
             desenvolver produtos digitais inovadores.
@@ -197,7 +200,7 @@
         <div class="outsourcing">
           <img src="./assets/Icon_Outsourcing.svg" alt="Img Icon Outsourcing" class="img_outsourcing" />
           <h2>OUTSOURCING</h2>
-          <p>
+          <p class="out_text">
             Cuidamos da TI da sua empresa para que você tenha dedicação
             exclusiva no seu negócio. Um time é dedicado exclusivamente para
             desenvolver as demandas de tecnologia.
@@ -209,7 +212,7 @@
     </div>
 
     <div class="div-call-know">
-      <p>
+      <p class="indexFinal_text">
         Conheça nossos produtos excepcionais e descubra por que somos a
         escolha número um para aqueles que buscam qualidade, eficiência e
         resultados duradouros.

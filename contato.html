@@ -22,6 +22,7 @@
 
     <script src="./javaScript/main.js" defer></script>
     <script src="./javaScript/form.js" defer></script>
+    <script src="./javaScript/englishText/contact.js" defer></script>
   </head>
 <body>
   
@@ -65,23 +66,23 @@
     <div class="form_container">
       <div class="form_title">
         <img src="./assets/Rectangle 9.svg" alt="">
-              <h2>Quer ser nosso parceiro? Vem inovar com a gente!</h2>
+              <h2 class="contact_title">Quer ser nosso parceiro? Vem inovar com a gente!</h2>
       </div>
     
       <div class="form">
         <form action="">
-          <p>Preencha o formulário e deixe a sua mensagem.</p>
+          <p class="contact_subtitle">Preencha o formulário e deixe a sua mensagem.</p>
           <input type="text" id="name" placeholder="Nome" required>
           <input type="email" id="email" placeholder="E-mail" required>
           <input type="tel" id="phone" placeholder="Telefone" maxlength="11" required>
           <textarea name="" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>
           <div class="checkbox">
             
-            <label class="container">
+            <label class="container" id="check1">
               <input type="checkbox" id="emailCheck">
               <span class="checkmark"></span>
              Eu concordo em receber mensagens  através deste e-mail.</label>
-            <label class="container">Eu concordo em receber mensagens  pelo meu número de telefone.
+            <label class="container" id="check2">Eu concordo em receber mensagens  pelo meu número de telefone.
               <input type="checkbox" id="phoneCheck">
               <span class="checkmark"></span>
             </label>
