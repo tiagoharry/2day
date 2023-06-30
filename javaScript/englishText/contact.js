@@ -2,6 +2,9 @@ const language = document.querySelector('.nav_language');
 
 const title = document.querySelector('.contact_title');
 const subtitle = document.querySelector('.contact_subtitle');
+const name = document.querySelector('#name');
+const phone = document.querySelector('#phone');
+const message = document.querySelector('#message');
 const checkmark1 = document.querySelector('#check1');
 const checkmark2 = document.querySelector('#check2');
 const button = document.querySelector('button');
@@ -12,6 +15,12 @@ language.addEventListener('click', (e) => {
   title.textContent = "Want to Innovate with us? Become our business partner!";
 
   subtitle.textContent = "Fill up this form and send us your message.";
+
+  name.placeholder = "Name";
+
+  phone.placeholder = "Phone";
+  
+  message.placeholder = "Message";
   
   checkmark1.textContent = "I agree to receive messages via this email";
 

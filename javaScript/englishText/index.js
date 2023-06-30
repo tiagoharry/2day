@@ -1,3 +1,4 @@
+import { menu } from "./menu.js";
 
 const ButtonLanguage = document.querySelector('.nav_language');
 const principalTitle = document.querySelector('.principal_title');
@@ -57,6 +58,7 @@ ButtonLanguage.addEventListener('click', () => {
   indexFinalButton.textContent = "I want to meet right now";
 
   ourValuesList();
+  menu();
 });
 
 function ourValuesList() {
