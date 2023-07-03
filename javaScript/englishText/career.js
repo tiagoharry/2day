@@ -13,7 +13,7 @@ const part2Text = document.querySelector('.carreira_part2_text');
 const part3Title = document.querySelector('.career_title_part3');
 const part3Text = document.querySelector('.carreira_part3_text');
 
-const button = document.querySelector('button');
+const button = document.querySelector('.send_resume');
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
