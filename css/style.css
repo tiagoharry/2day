@@ -415,7 +415,7 @@ li p {
 
 .oqueNosFazermos_imgs {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
   margin-top: -90px
