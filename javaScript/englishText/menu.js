@@ -4,7 +4,7 @@ export function menu() {
   const career = document.querySelector('.career');
   const contact = document.querySelector('.contact');
   const apointment = document.querySelector('.apointment');
-  const lang = document.querySelector('.lang');
+  const lang = document.querySelector('.nav_language');
   
     aboutUs.textContent = "About us";
    

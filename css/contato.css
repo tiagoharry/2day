@@ -142,6 +142,17 @@ form textarea {
   transform: rotate(45deg);
 }
 
+.ckeckbox_text1, .checkbox_text2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.checkbox1 {
+  display: flex;
+  align-items: center;
+}
+
 form button {
   background: #00ADB5;
   border-radius: 4px;

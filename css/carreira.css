@@ -58,6 +58,10 @@
   justify-content: center;
 }
 
+.career_title_part2 {
+  width:360px
+}
+
 .carreira_part2_subtitle {
   font-weight: 700;
   font-size: 20px;
@@ -88,6 +92,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.carreira_part3_title {
+  width: 480px;
 }
 
 .carreira_part3_text {

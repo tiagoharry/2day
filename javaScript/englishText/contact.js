@@ -5,8 +5,8 @@ const subtitle = document.querySelector('.contact_subtitle');
 const name = document.querySelector('#name');
 const phone = document.querySelector('#phone');
 const message = document.querySelector('#message');
-const checkmark1 = document.querySelector('#check1');
-const checkmark2 = document.querySelector('#check2');
+const checkmark1 = document.querySelector('.ckeckbox_text1');
+const checkmark2 = document.querySelector('.checkbox_text2');
 const button = document.querySelector('button');
 
 language.addEventListener('click', (e) => {
@@ -21,7 +21,7 @@ language.addEventListener('click', (e) => {
   phone.placeholder = "Phone";
   
   message.placeholder = "Message";
-  
+
   checkmark1.textContent = "I agree to receive messages via this email";
 
   checkmark2.textContent = "I agree to receive messages through this phone number";

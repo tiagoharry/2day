@@ -28,10 +28,10 @@ language.addEventListener('click', (e) => {
 
   part2Text.textContent = "Alegrete is a small city in RS/Brazil, with a welcoming community and rich culture full of traditions. Alegrete is a developing city that offers a complete infrastructure for people who desire to work and grow professionally. We possess a modern and comfortable structure as well as a pleasant and inspiring workplace.";
 
-  part3Title.textContent = "Became a highly successful professional";
+  part3Title.textContent = "Became a highly \n successful professional";
 
   part3Text.textContent = "Become a member of our team, send your resume and come be a part of our future.";
 
-  button.textContent = "Send your resume"
+  button.textContent = "Send your resume";
 
 });

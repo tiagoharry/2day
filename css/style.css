@@ -82,6 +82,12 @@ nav a:hover {
   color: #00adb5;
 }
 
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .btn_sample_nav,
 .OqueNosFazemos_btn {
   background-color: #00adb5;
@@ -349,8 +355,16 @@ li p {
   gap: 32px;
 }
 
+.OqueNosFazemos_Son {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .OqueNosFazemos_container {
   display: flex;
+  justify-content: center;
   gap: 34px;
 }
 
@@ -365,13 +379,6 @@ li p {
   color: #00ADB5;
 }
 
-.OqueNosFazemos_Son {
-  display: flex;
-  justify-content: center;
-
-  gap: 100px;
-}
-
 .startupLab {
   display: flex;
   flex-direction: column;
@@ -379,7 +386,8 @@ li p {
   gap: 24px;
 }
 
-.img_startupLab_person, .img_outsourcing_person {
+.img_startupLab_person,
+.img_outsourcing_person {
   width: 565px;
 }
 
@@ -403,6 +411,14 @@ li p {
 .img_startupLab,
 .img_outsourcing {
   height: 120px;
+}
+
+.oqueNosFazermos_imgs {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px
 }
 
 .div-call-know {
