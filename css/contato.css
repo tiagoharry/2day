@@ -253,6 +253,10 @@ form button {
     height: 7px;
   }
 
+  .ckeckbox_text1, .checkbox_text2 {
+  margin-top: -3px;
+}
+
   form button {
     margin-top: -15px;
     font-size: 16px;

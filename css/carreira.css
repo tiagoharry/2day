@@ -156,6 +156,10 @@
     margin-top: 55px;
   }
 
+  .carreira_part1_subtitle {
+    width: 300px;
+  }
+
   .carreira_part1 {
     display: flex;
     justify-content: center;
@@ -178,9 +182,12 @@
 
   .carreira_part2 {
     flex-direction: column;
-    align-items: center;
     gap: 17px;
     padding: 32px 0;
+  }
+
+  .carreira_part2_title {
+  margin-left: 80px;
   }
 
   .carreira_part1_title h2,
@@ -201,10 +208,29 @@
     font-size: 16px;
   }
 
+  .carreira_part2_text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .carreira_part1_img,
   .carreira_part2_img,
   .carreira_part3_img {
     width: 326.84px;
+  }
+
+  .carreira_part3_title {
+    justify-content:center;
+    margin-left: -50px;
+  }
+
+  .carreira_part3_info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
   }
 
   .footer {
