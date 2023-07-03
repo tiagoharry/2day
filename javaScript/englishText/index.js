@@ -1,4 +1,4 @@
-import { menu } from "./menu.js";
+import { menu } from './menu.js';
 
 const ButtonLanguage = document.querySelector('.nav_language');
 const principalTitle = document.querySelector('.principal_title');

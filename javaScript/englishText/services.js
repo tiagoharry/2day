@@ -1,6 +1,6 @@
-import { menu } from "./menu.js";
+import { menu } from './menu.js';
 
-const Language = document.querySelector('.services_lang');
+const Language = document.querySelector('.nav_language');
 
 const agribusines = document.querySelector('.agro_title');
 const agroText = document.querySelector('.agro_text');
@@ -57,7 +57,7 @@ Language.addEventListener('click', (e) => {
 
   cardText2.textContent = "Choosing 2Day was essential for our business, as all the documentation was organized in such a way that any contracted developer can receive the documentation extremely quickly and start programming.";
 
-  cardText3.textContent = "When Soltech was searching for a partner to develop our platform, choosing 2Day was essential. From the structuring to the launch of the platform, everything was elaborated with great competence. They are indispensable partners for our solution."
+  cardText3.textContent = "When Soltech was searching for a partner to develop our platform, choosing 2Day was essential. From the structuring to the launch of the platform, everything was elaborated with great competence. They are indispensable partners for our solution.";
 
   menu();
 

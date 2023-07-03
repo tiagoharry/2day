@@ -1,3 +1,5 @@
+import { menu } from './menu.js';
+
 const language = document.querySelector('.nav_language'); 
 
 const title = document.querySelector('.contact_title');
@@ -27,5 +29,7 @@ language.addEventListener('click', (e) => {
   checkmark2.textContent = "I agree to receive messages through this phone number";
 
   button.textContent = "SEND";
+
+  menu();
 
 });

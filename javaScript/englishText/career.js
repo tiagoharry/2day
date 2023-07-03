@@ -1,3 +1,5 @@
+import { menu } from './menu.js';
+
 const language = document.querySelector('.nav_language'); 
 
 const part1Title = document.querySelector('.career_part1_title');
@@ -15,7 +17,7 @@ const button = document.querySelector('button');
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
-  
+
   part1Title.textContent = "Come grow with us";
 
   part1Subtitle.textContent = "Be a part of our successful team.";
@@ -34,4 +36,5 @@ language.addEventListener('click', (e) => {
 
   button.textContent = "Send your resume";
 
+  menu();
 });
