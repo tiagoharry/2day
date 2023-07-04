@@ -1,6 +1,6 @@
 import { menu } from './menu.js';
 
-const Language = document.querySelector('.nav_language');
+const Language = document.querySelector('.nav_language.mobile_language');
 
 const agribusines = document.querySelector('.agro_title');
 const agroText = document.querySelector('.agro_text');

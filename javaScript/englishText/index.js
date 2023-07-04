@@ -1,6 +1,7 @@
 import { menu } from './menu.js';
 
-const ButtonLanguage = document.querySelector('.nav_language');
+const language = document.querySelector('.nav_language.mobile_language');
+//const languageMobile = document.querySelector('.mobile_language')
 
 const principalTitle = document.querySelector('.principal_title');
 const principalButton = document.querySelector('.btn_icon_home');
@@ -24,8 +25,14 @@ const outText = document.querySelector('.out_text');
 const indexFinalText = document.querySelector('.indexFinal_text');
 const indexFinalButton = document.querySelector('.OqueNosFazemos_btn');
 
-ButtonLanguage.addEventListener('click', () => {
+language.addEventListener('click', () => {
   
+  index()
+  ourValuesList();
+  menu();
+});
+
+function index() {
   principalTitle.textContent = "We work in the digital transformation of business/enterprises and startups.";
 
   principalText.textContent = "We have teams specialized in the development of information technology products according to the necessities of each player.";
@@ -57,10 +64,7 @@ ButtonLanguage.addEventListener('click', () => {
   indexFinalText.textContent = "Explore our exceptional products and discover why we are the number one choice of those seeking for quality, efficiency and long lasting  results.";
 
   indexFinalButton.textContent = "I want to meet right now";
-
-  ourValuesList();
-  menu();
-});
+}
 
 function ourValuesList() {
    const list1 = document.querySelector('.list1');

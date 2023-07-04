@@ -1,6 +1,6 @@
 import { menu } from './menu.js';
 
-const language = document.querySelector('.nav_language'); 
+const language = document.querySelector('.nav_language.mobile_language'); 
 
 const part1Title = document.querySelector('.career_part1_title');
 const part1Subtitle = document.querySelector('.carreira_part1_subtitle');
