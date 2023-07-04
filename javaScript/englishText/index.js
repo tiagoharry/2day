@@ -1,6 +1,7 @@
 import { menu } from './menu.js';
 
 const ButtonLanguage = document.querySelector('.nav_language');
+
 const principalTitle = document.querySelector('.principal_title');
 const principalButton = document.querySelector('.btn_icon_home');
 const principalText = document.querySelector('.principal_text');
