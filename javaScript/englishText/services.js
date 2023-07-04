@@ -1,6 +1,7 @@
 import { menu } from './menu.js';
 
-const Language = document.querySelector('.nav_language.mobile_language');
+const language = document.querySelector('.nav_language');
+const languageMobile = document.querySelector('.mobile_language');
 
 const agribusines = document.querySelector('.agro_title');
 const agroText = document.querySelector('.agro_text');
@@ -23,11 +24,22 @@ const cardText1 = document.querySelector('.card_text1');
 const cardText2 = document.querySelector('.card_text2');
 const cardText3 = document.querySelector('.card_text3');
 
-
-Language.addEventListener('click', (e) => {
+language.addEventListener('click', (e) => {
   e.preventDefault();
-  agribusines.textContent = "AGRIBUSINESS";
+ 
+  services();
+  menu();
+});
 
+languageMobile.addEventListener('click', (e) => {
+  e.preventDefault();
+ 
+  services();
+  menu();
+});
+
+function services() {
+  agribusines.textContent = "AGRIBUSINESS";
 
   agroText.textContent = " We have the perfect solution for obtaining better results in your property, in either agricultur, livestock or even crop and livestock integration. the perfect combination of technology and farming.";
 
@@ -58,7 +70,4 @@ Language.addEventListener('click', (e) => {
   cardText2.textContent = "Choosing 2Day was essential for our business, as all the documentation was organized in such a way that any contracted developer can receive the documentation extremely quickly and start programming.";
 
   cardText3.textContent = "When Soltech was searching for a partner to develop our platform, choosing 2Day was essential. From the structuring to the launch of the platform, everything was elaborated with great competence. They are indispensable partners for our solution.";
-
-  menu();
-
-});
+}

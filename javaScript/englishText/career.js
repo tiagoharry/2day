@@ -1,6 +1,7 @@
 import { menu } from './menu.js';
 
-const language = document.querySelector('.nav_language.mobile_language'); 
+const language = document.querySelector('.nav_language'); 
+const languageMobile = document.querySelector('.mobile_language');
 
 const part1Title = document.querySelector('.career_part1_title');
 const part1Subtitle = document.querySelector('.carreira_part1_subtitle');
@@ -17,7 +18,18 @@ const button = document.querySelector('.send_resume');
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
+ 
+  career();
+  menu();
+});
 
+languageMobile.addEventListener('click', (e) => {
+  e.preventDefault();
+  career()
+  menu();
+});
+
+function career() {
   part1Title.textContent = "Come grow with us";
 
   part1Subtitle.textContent = "Be a part of our successful team.";
@@ -35,6 +47,4 @@ language.addEventListener('click', (e) => {
   part3Text.textContent = "Become a member of our team, send your resume and come be a part of our future.";
 
   button.textContent = "Send your resume";
-
-  menu();
-});
+}

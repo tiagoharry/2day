@@ -1,6 +1,7 @@
 import { menu } from './menu.js';
 
-const language = document.querySelector('.nav_language.mobile_language'); 
+const language = document.querySelector('.nav_language'); 
+const languageMobile = document.querySelector('.mobile_language');
 
 const title = document.querySelector('.contact_title');
 const subtitle = document.querySelector('.contact_subtitle');
@@ -14,6 +15,18 @@ const button = document.querySelector('button');
 language.addEventListener('click', (e) => {
   e.preventDefault();
 
+  contact();
+  menu();
+});
+
+languageMobile.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  contact();
+  menu();
+});
+
+function contact() {
   title.textContent = "Want to Innovate with us? Become our business partner!";
 
   subtitle.textContent = "Fill up this form and send us your message.";
@@ -29,7 +42,4 @@ language.addEventListener('click', (e) => {
   checkmark2.textContent = "I agree to receive messages through this phone number";
 
   button.textContent = "SEND";
-
-  menu();
-
-});
+}

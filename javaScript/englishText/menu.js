@@ -1,5 +1,5 @@
 export function menu() {
-  const aboutUs = document.querySelector('.about.aboutMobile');
+  const aboutUs = document.querySelector('.about#aboutMobile');
   const services = document.querySelector('.services.sevicesMobile');
   const career = document.querySelector('.career.careerMobile');
   const contact = document.querySelector('.contact.contactMobile');

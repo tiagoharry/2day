@@ -1,7 +1,7 @@
-import { menu } from './menu.js';
+//import { menu } from './menu.js';
 
-const language = document.querySelector('.nav_language.mobile_language');
-//const languageMobile = document.querySelector('.mobile_language')
+const language = document.querySelector('.nav_language');
+const languageMobile = document.querySelector('.mobile_language');
 
 const principalTitle = document.querySelector('.principal_title');
 const principalButton = document.querySelector('.btn_icon_home');
@@ -27,7 +27,14 @@ const indexFinalButton = document.querySelector('.OqueNosFazemos_btn');
 
 language.addEventListener('click', () => {
   
-  index()
+  index();
+  ourValuesList();
+  menu();
+});
+
+languageMobile.addEventListener('click', () => {
+  
+  index();
   ourValuesList();
   menu();
 });
