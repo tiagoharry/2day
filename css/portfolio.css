@@ -35,6 +35,10 @@
   text-align: right;
 }
 
+#portfolio_title3 {
+  margin-right: -95px;
+}
+
 .portfolio_textRight {
   text-align: justify;
   display: flex;
