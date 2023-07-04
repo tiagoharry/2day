@@ -1,4 +1,4 @@
-//import { menu } from './menu.js';
+import { menu } from './menu.js';
 
 const language = document.querySelector('.nav_language');
 const languageMobile = document.querySelector('.mobile_language');

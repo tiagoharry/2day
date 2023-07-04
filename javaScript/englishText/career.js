@@ -18,9 +18,8 @@ const button = document.querySelector('.send_resume');
 
 language.addEventListener('click', (e) => {
   e.preventDefault();
- 
-  career();
   menu();
+  career();
 });
 
 languageMobile.addEventListener('click', (e) => {
