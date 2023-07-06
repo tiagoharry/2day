@@ -1,7 +1,7 @@
-import { menu } from "./menu.js";
+import { menu, menuBR } from "./menu.js";
+import { setLang } from "../global/variable.js";
 
 const language = document.querySelector(".nav_language");
-const languageEn = document.querySelector(".nav_languageEn");
 const languageMobile = document.querySelector(".mobile_language");
 
 const principalTitle = document.querySelector(".principal_title");
@@ -26,23 +26,37 @@ const outText = document.querySelector(".out_text");
 const indexFinalText = document.querySelector(".indexFinal_text");
 const indexFinalButton = document.querySelector(".OqueNosFazemos_btn");
 
-language.addEventListener("click", (e) => {
-  //language.removeEventListener('click')
-  languageEn.classList.toggle("hide");
-  index();
-  ourValuesList();
+if (language.textContent.toLowerCase() == "en") {
   menu();
-});
+  index();
+} else if (language.textContent.toLowerCase() == "pt-br") {
+  menuBR();
+  indexBR();
+}
 
-languageEn.addEventListener("click", () => {
-  language.preventDefault();
+language.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  toggle();
 });
 
 languageMobile.addEventListener("click", () => {
-  index();
-  ourValuesList();
-  menu();
+  toggle();
 });
+
+function toggle() {
+  if (language.textContent.toLowerCase() == "en") {
+    indexBR();
+    ourValuesListBR();
+    menuBR();
+    localStorage.setItem("lang", "PT-BR");
+  } else if (language.textContent.toLowerCase() == "pt-br") {
+    index();
+    ourValuesList();
+    menu();
+    localStorage.setItem("lang", "EN");
+  }
+}
 
 function index() {
   principalTitle.textContent =
@@ -87,9 +101,51 @@ function index() {
   indexFinalButton.textContent = "I want to meet right now";
 }
 
+function indexBR() {
+  principalTitle.textContent =
+    "Trabalhamos na transformação digital das empresas e startups!";
+
+  principalText.textContent =
+    "Somos especializados no desenvolvimento personalizado da tecnologia da informação,formada por times de know-how no negócio de cada player.";
+
+  principalButton.textContent = " QUERO SABER MAIS";
+
+  mentoriaTitle.textContent = "Conheça um pouco sobre \n a nossa história.";
+
+  mentoriaSubtitle.textContent =
+    " Idealizamos uma empresa focada nas pessoas, sejam elas colaboradores ou parceiros.";
+
+  mentoriaText.textContent =
+    " Nascemos do sonho de transformar a região do Pampa Gaúcho por meio do desenvolvimento tecnológico apoiados por talentos nascidos na região. Formamos um time de pessoas que buscam apoiar e desenvolver ideias e negócios através da transformação digital.";
+
+  missionTitle.textContent = "Nossa Missão:";
+
+  missionText.textContent =
+    "Desenvolver a transformação digital das empresas e startups, com inovação, excelência em qualidade, transparência e segurança.";
+
+  visionTitle.textContent = "Nossa Visão:";
+
+  visionText.textContent =
+    "Ser referência como empresas de tecnologia, atuando como extensão de TI dos nossos clientes com preços competitivos, comprometimento com os clientes e parceiros.";
+
+  valuesTitle.textContent = "Nossos Valores:";
+
+  weDoTitle.textContent = "O que nós fazemos?";
+
+  starTupText.textContent = "Trabalhamos como incubadora de ideias e parceiros de Startups, dedicamos um time especializado e com metodologias adaptadas para desenvolver produtos digitais inovadores.";
+
+  outText.textContent =
+    "Cuidamos da TI da sua empresa para que você tenha dedicação exclusiva no seu negócio. Um time é dedicado exclusivamente para desenvolver as demandas de tecnologia.";
+
+  indexFinalText.textContent =
+    " Conheça nossos produtos excepcionais e descubra por que somos a escolha número um para aqueles que buscam qualidade, eficiência e resultados duradouros.";
+
+  indexFinalButton.textContent = "Quero Conhecer Agora Mesmo";
+}
+
 function ourValuesList() {
   const list1 = document.querySelector(".list1");
-  list1.textContent = "client satisfaction";
+  list1.textContent = "Client satisfaction";
   const list2 = document.querySelector(".list2");
   list2.textContent = "Appreciation of collaborators";
   const list3 = document.querySelector(".list3");
@@ -109,7 +165,34 @@ function ourValuesList() {
   const list9 = document.querySelector(".list9");
   list9.textContent = "Search for high impact technologic challenge";
   const list10 = document.querySelector(".list10");
-  list10.textContent = "respect, development and recognition";
+  list10.textContent = "Respect, development and recognition";
   const list11 = document.querySelector(".list11");
-  list11.textContent = "free speech";
+  list11.textContent = "Free speech";
+}
+
+function ourValuesListBR() {
+  const list1 = document.querySelector(".list1");
+  list1.textContent = "Satisfação do cliente";
+  const list2 = document.querySelector(".list2");
+  list2.textContent = "Valorização dos colaboradores";
+  const list3 = document.querySelector(".list3");
+  list3.textContent = "Foco nos resultados";
+  const list4 = document.querySelector(".list4");
+  list4.textContent =
+    "Atuar como parte integrante da empresa: juntos nossa marca é mais forte!";
+  const list5 = document.querySelector(".list5");
+  list5.textContent = "Ser parceiro e sócio dos nossos clientes";
+  const list6 = document.querySelector(".list6");
+  list6.textContent =
+    "Comprometimento com o cliente";
+  const list7 = document.querySelector(".list7");
+  list7.textContent = "Ética e transparência";
+  const list8 = document.querySelector(".list8");
+  list8.textContent = "Custos baixos e benefício compensatório";
+  const list9 = document.querySelector(".list9");
+  list9.textContent = "Busca por desafios tecnológicos de impacto";
+  const list10 = document.querySelector(".list10");
+  list10.textContent = "Respeito, desenvolvimento e reconhecimento";
+  const list11 = document.querySelector(".list11");
+  list11.textContent = "Simplicidade e liberdade de expressão";
 }

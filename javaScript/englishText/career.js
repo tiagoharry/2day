@@ -27,6 +27,15 @@ if (language.textContent.toLowerCase() == "en") {
 
 language.addEventListener("click", (e) => {
   e.preventDefault();
+  toggle();
+});
+
+languageMobile.addEventListener("click", (e) => {
+  e.preventDefault();
+  toggle();
+});
+
+function toggle() {
   if (language.textContent.toLowerCase() == "en") {
     menuBR();
     careerBR();
@@ -36,13 +45,7 @@ language.addEventListener("click", (e) => {
     career();
     localStorage.setItem("lang", "EN");
   }
-});
-
-languageMobile.addEventListener("click", (e) => {
-  e.preventDefault();
-  career();
-  menu();
-});
+}
 
 function career() {
   part1Title.textContent = "Come grow with us";
@@ -89,5 +92,5 @@ function careerBR() {
   part3Text.textContent =
     "Não perca a oportunidade de fazer carreira na nossa empresa, envie seu currículo e venha fazer parte da nossa equipe.";
 
-  button.textContent = "Enviar Currículo.";
+  button.textContent = "Enviar Currículo";
 }
