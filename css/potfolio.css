@@ -1,0 +1,30 @@
+#div-agro {
+  display: flex;
+  flex-direction: row;
+}
+
+#div_certificacao {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+}
+
+#certificacao_text {
+ display: flex;
+ flex-direction: column;
+ justify-content: right;
+ text-align: right;
+}
+
+#certificacao_equipamentos_title {
+  display: flex;
+  justify-content:right;
+  text-align: right;
+}
+
+#certificacao_equipamentos_text p,
+#div_financeiro h2,
+#div_financeiro p {
+  text-align: right;
+}
