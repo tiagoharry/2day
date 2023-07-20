@@ -416,6 +416,7 @@ li p {
 .startupLab p,
 .outsourcing p {
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .img_startupLab,

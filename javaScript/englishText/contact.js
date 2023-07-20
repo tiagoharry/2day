@@ -13,6 +13,9 @@ const checkmark1 = document.querySelector('.ckeckbox_text1');
 const checkmark2 = document.querySelector('.checkbox_text2');
 const button = document.querySelector('button');
 
+const footerAdress = document.querySelector(".footer_adress");
+
+
 if (language.textContent.toLowerCase() == "en") {
   menu();
   contact();
@@ -59,6 +62,9 @@ function contact() {
   checkmark2.textContent = "I agree to receive messages through this phone number";
 
   button.textContent = "SEND";
+
+  footerAdress.textContent = "Avenue Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brazil"
+
 }
 
 function contactBR() {
@@ -77,4 +83,7 @@ function contactBR() {
   checkmark2.textContent = "Eu concordo em receber mensagens pelo meu número de telefone.";
 
   button.textContent = "Enviar";
+
+  footerAdress.textContent = "Avenida Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brasil"
+
 }

@@ -17,6 +17,8 @@ const part3Text = document.querySelector(".carreira_part3_text");
 
 const button = document.querySelector(".send_resume");
 
+const footerAdress = document.querySelector(".footer_adress");
+
 if (language.textContent.toLowerCase() == "en") {
   menu();
   career();
@@ -69,6 +71,9 @@ function career() {
     "Become a member of our team, send your resume and come be a part of our future.";
 
   button.textContent = "Send your resume";
+
+  footerAdress.textContent = "Avenue Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brazil"
+
 }
 
 function careerBR() {
@@ -93,4 +98,7 @@ function careerBR() {
     "Não perca a oportunidade de fazer carreira na nossa empresa, envie seu currículo e venha fazer parte da nossa equipe.";
 
   button.textContent = "Enviar Currículo";
+
+  footerAdress.textContent = "Avenida Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brasil"
+
 }

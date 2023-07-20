@@ -25,6 +25,9 @@ const cardText1 = document.querySelector('.card_text1');
 const cardText2 = document.querySelector('.card_text2');
 const cardText3 = document.querySelector('.card_text3');
 
+const footerAdress = document.querySelector(".footer_adress");
+
+
 if (language.textContent.toLowerCase() == "en") {
   menu();
   services();
@@ -89,6 +92,9 @@ function services() {
   cardText2.textContent = "Choosing 2Day was essential for our business, as all the documentation was organized in such a way that any contracted developer can receive the documentation extremely quickly and start programming.";
 
   cardText3.textContent = "When Soltech was searching for a partner to develop our platform, choosing 2Day was essential. From the structuring to the launch of the platform, everything was elaborated with great competence. They are indispensable partners for our solution.";
+
+  footerAdress.textContent = "Avenue Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brazil"
+
 }
 
 function servicesBR() {
@@ -123,4 +129,7 @@ function servicesBR() {
   cardText2.textContent = "A escolha da 2Day foi essencial para o nosso negócio, pois toda documentação ficou organizada de forma que qualquer desenvolvedor contratado possa receber a documentação e começar a programar de forma extremamente rápida.";
 
   cardText3.textContent = "Quanto a Soltech buscou um parceiro para desenvolver a nossa plataforma a escolha da 2Day foi essencial, desde a estruturação até o lançamento da plataforma tudo foi elaborado com muita competência. São parceiros imprescindíveis para a nossa solução.";
+
+  footerAdress.textContent = "Avenida Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brasil"
+
 }

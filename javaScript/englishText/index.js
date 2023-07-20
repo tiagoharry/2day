@@ -26,6 +26,8 @@ const outText = document.querySelector(".out_text");
 const indexFinalText = document.querySelector(".indexFinal_text");
 const indexFinalButton = document.querySelector(".OqueNosFazemos_btn");
 
+const footerAdress = document.querySelector(".footer_adress");
+
 if (language.textContent.toLowerCase() == "en") {
   menu();
   index();
@@ -99,6 +101,8 @@ function index() {
     "Explore our exceptional products and discover why we are the number one choice of those seeking for quality, efficiency and long lasting  results.";
 
   indexFinalButton.textContent = "I want to meet right now";
+
+  footerAdress.textContent = "Avenue Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brazil"
 }
 
 function indexBR() {
@@ -141,6 +145,8 @@ function indexBR() {
     " Conheça nossos produtos excepcionais e descubra por que somos a escolha número um para aqueles que buscam qualidade, eficiência e resultados duradouros.";
 
   indexFinalButton.textContent = "Quero Conhecer Agora Mesmo";
+
+  footerAdress.textContent = "Avenida Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brasil"
 }
 
 function ourValuesList() {
