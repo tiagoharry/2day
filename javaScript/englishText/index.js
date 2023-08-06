@@ -38,7 +38,6 @@ if (language.textContent.toLowerCase() == "en") {
 
 language.addEventListener("click", (e) => {
   e.preventDefault();
-
   toggle();
 });
 
@@ -54,7 +53,7 @@ function toggle() {
     localStorage.setItem("lang", "PT-BR");
   } else if (language.textContent.toLowerCase() == "pt-br") {
     index();
-    ourValuesList();
+    //ourValuesList();
     menu();
     localStorage.setItem("lang", "EN");
   }
@@ -103,6 +102,31 @@ function index() {
   indexFinalButton.textContent = "I want to meet right now";
 
   footerAdress.textContent = "Avenue Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brazil"
+
+  const list1 = document.querySelector(".list1");
+  list1.textContent = "Client satisfaction";
+  const list2 = document.querySelector(".list2");
+  list2.textContent = "Appreciation of collaborators";
+  const list3 = document.querySelector(".list3");
+  list3.textContent = "Focus in the results";
+  const list4 = document.querySelector(".list4");
+  list4.textContent =
+    "Function as a member of the company: Together our brand?? is stronger";
+  const list5 = document.querySelector(".list5");
+  list5.textContent = "Be business partners with our clients";
+  const list6 = document.querySelector(".list6");
+  list6.textContent =
+    "Commitment with our clients - Your success is our sucess";
+  const list7 = document.querySelector(".list7");
+  list7.textContent = "Ethic and transparency";
+  const list8 = document.querySelector(".list8");
+  list8.textContent = "High cost/benefit";
+  const list9 = document.querySelector(".list9");
+  list9.textContent = "Search for high impact technologic challenge";
+  const list10 = document.querySelector(".list10");
+  list10.textContent = "Respect, development and recognition";
+  const list11 = document.querySelector(".list11");
+  list11.textContent = "Free speech";
 }
 
 function indexBR() {
@@ -149,32 +173,9 @@ function indexBR() {
   footerAdress.textContent = "Avenida Tiarajú, 1406 - Pampatec, Sala 35 - Alegrete/RS - 97546-550 - Brasil"
 }
 
-function ourValuesList() {
-  const list1 = document.querySelector(".list1");
-  list1.textContent = "Client satisfaction";
-  const list2 = document.querySelector(".list2");
-  list2.textContent = "Appreciation of collaborators";
-  const list3 = document.querySelector(".list3");
-  list3.textContent = "Focus in the results";
-  const list4 = document.querySelector(".list4");
-  list4.textContent =
-    "Function as a member of the company: Together our brand?? is stronger";
-  const list5 = document.querySelector(".list5");
-  list5.textContent = "Be business partners with our clients";
-  const list6 = document.querySelector(".list6");
-  list6.textContent =
-    "Commitment with our clients - Your success is our sucess";
-  const list7 = document.querySelector(".list7");
-  list7.textContent = "Ethic and transparency";
-  const list8 = document.querySelector(".list8");
-  list8.textContent = "High cost/benefit";
-  const list9 = document.querySelector(".list9");
-  list9.textContent = "Search for high impact technologic challenge";
-  const list10 = document.querySelector(".list10");
-  list10.textContent = "Respect, development and recognition";
-  const list11 = document.querySelector(".list11");
-  list11.textContent = "Free speech";
-}
+/*function ourValuesList() {
+  
+}*/
 
 function ourValuesListBR() {
   const list1 = document.querySelector(".list1");

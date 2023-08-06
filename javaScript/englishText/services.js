@@ -40,7 +40,6 @@ language.addEventListener('click', (e) => {
   e.preventDefault();
   
  toggle();
-
 });
 
 languageMobile.addEventListener('click', (e) => {

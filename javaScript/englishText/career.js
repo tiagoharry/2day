@@ -1,8 +1,8 @@
-import { menu, menuBR } from "./menu.js";
+import { menu, menuBR } from './menu.js';
 import { setLang } from "../global/variable.js";
 
-const language = document.querySelector(".nav_language");
-const languageMobile = document.querySelector(".mobile_language");
+const language = document.querySelector('.nav_language');
+const languageMobile = document.querySelector('.mobile_language');
 
 const part1Title = document.querySelector(".career_part1_title");
 const part1Subtitle = document.querySelector(".carreira_part1_subtitle");
@@ -27,24 +27,24 @@ if (language.textContent.toLowerCase() == "en") {
   careerBR();
 }
 
-language.addEventListener("click", (e) => {
+language.addEventListener('click', (e) => {
   e.preventDefault();
-  toggle();
+  
+ toggle();
 });
 
-languageMobile.addEventListener("click", (e) => {
-  e.preventDefault();
+languageMobile.addEventListener('click', () => {
   toggle();
 });
 
 function toggle() {
-  if (language.textContent.toLowerCase() == "en") {
-    menuBR();
+  if (language.textContent.toLowerCase() == "en") {  
     careerBR();
+    menuBR();
     localStorage.setItem("lang", "PT-BR");
   } else if (language.textContent.toLowerCase() == "pt-br") {
-    menu();
     career();
+    menu();
     localStorage.setItem("lang", "EN");
   }
 }
